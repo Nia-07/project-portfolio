@@ -1,0 +1,742 @@
+:root {
+    --main-blue: #3a92d1;
+    --second-blue: #45567d;
+    --main-white: #ffffff;
+    --main-gray: #4c4c4c;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000;
+    /*color: var(--main-white);*/
+}
+
+.container {
+    padding: 0rem 12rem;
+    color: #000;
+}
+
+
+
+/* ------- ABOUT ME -------- */
+.about__me{
+    margin-top: 3px;
+    padding: 100px;
+    font-size: 1.5rem;
+    background-image: url('fondo.png');
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Hace que la imagen de fondo cubra completamente el contenedor */
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 50px; /* Espacio adicional desde el borde superior */
+    margin-right: 230px;
+    transform: translate(40%); /* Espacio adicional desde el borde derecho */
+}
+
+.text-container {
+    padding: 10px; /* Espaciado interno del contenedor de texto */
+    border-radius: 15px; /* Borde redondeado del contenedor de texto */
+    margin-right: 500px; /* Espaciado entre el contenedor de texto y la imagen */
+    transform: translate(20%);
+   
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    
+}
+
+.btn1{
+    display:  inline-block;
+    background-color: yellowgreen;
+    color: #ffffff;
+    text-decoration:none;
+    padding: 15px;
+    margin-top: 10 px;
+    border-radius: 5px;
+    position: absolute;
+    top: 420px; /* Ajusta la distancia desde la parte superior */
+    right: 190px; /* Lo posiciona al lado derecho */
+    
+}
+.btn1:hover {
+    background-color: yellowgreen;
+} 
+
+/* ------- TECNOLOGIAS -------- */
+.services {
+    padding: 160px;
+    font-size: 1.5rem;
+    background-color: black;
+    /*background-color: rgba(0, 0, 0, 0.9);*/
+    /*background-image: url('C:/a-portafolio-tania-dev/font1.png');*/
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Hace que la imagen de fondo cubra completamente el contenedor */
+}
+
+.services__card {
+   
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    /*transform: translate(-5%);*/
+    
+}
+
+.card {
+    /*background-color: rgb(173, 98, 183);*/
+    transition: all 0.2s ease-in;
+    padding: 10px, 15px;
+    text-align: left;
+    transform: translate(5%);
+    height: 10rem;
+    width: 20rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+   
+}
+
+.service__logo {
+    height: 60px;
+    width: 60px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__logo i {
+    font-size: x-large;
+    transition: all 0.2s ease-in;
+}
+
+.card:hover {
+    background-color: var(--secondary-bg-color);
+}
+.card:hover .service__logo {
+    background-color: #fff;
+    
+}
+.card:hover .service__logo i {
+    color: #000000;
+}
+
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 4.2rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+hr {
+    height: 8px;
+}
+
+/* ------- NAV- MENU-------- */
+.nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    /*background-color: #212F3C;*/
+    border-radius: 5px; 
+    /*background: var(--main-blue);*/
+    z-index: 10;
+}
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+   /* overflow-x: auto;*/ /* Agrega desplazamiento horizontal si el contenido es demasiado ancho */
+}
+ 
+@media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+    .nav-list {
+      margin: 0 1rem;
+      flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+      /*overflow-x: auto;*/ /* Agrega desplazamiento horizontal si el contenido es demasiado ancho */
+    }
+} 
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 1rem;
+    white-space: nowrap; /* Evita que los enlaces se dividan en varias líneas */
+}
+.nav-list a:hover {
+    /*background: var(--second-blue);*/
+    background: yellowgreen;
+    border-radius: 10px;
+}
+.titulo {
+    display: inline-block;
+}
+
+.destacado a {
+    font-size: 20px; /* Tamaño del texto más grande */
+    font-weight: bold;
+   
+}
+
+
+#h1 {
+
+    font-family: 'Lilita One', sans-serif;/* Aplica la fuente Pacifico al h2 */
+    font-size: 40px; /* Tamaño del texto */
+    color: greenyellow; /* Color del texto */
+    line-height: 1.8;
+    text-align: left; /* Alineación del texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    margin-bottom: 0px; /* Margen inferior para separar del párrafo */
+    margin-right: 200px;
+    padding-right: 100px;
+    top: 0%;
+    left: 0%; /* Coloca el texto al 50% del lado izquierdo */
+    transform: translate(2%);
+}
+
+#h2 {
+    font-family: 'Lilita One', sans-serif;/* Aplica la fuente Pacifico al h2 */
+    font-size: 40px; /* Tamaño del texto */
+    color: greenyellow; /* Color del texto */
+    line-height: 2.0;
+    text-align: left; /* Alineación del texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    margin-bottom: 0px; /* Margen inferior para separar del párrafo */
+    margin-right: 200px;
+    padding-right: 100px;
+    top: 0%;
+    left: 0%; /* Coloca el texto al 50% del lado izquierdo */
+    transform: translate(15%);
+}
+
+#h2e{
+    font-family: 'Lilita One', sans-serif;/* Aplica la fuente Pacifico al h2 */
+    font-size: 40px; /* Tamaño del texto */
+    color: greenyellow; /* Color del texto */
+    line-height: 2.0;
+    text-align: left; /* Alineación del texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    margin-bottom: 0px; /* Margen inferior para separar del párrafo */
+    margin-right: 200px;
+    padding-right: 100px;
+    top: 0%;
+    left: 0%; /* Coloca el texto al 50% del lado izquierdo */
+    transform: translate(2%);
+
+}
+
+#h2t{
+    vertical-align: super;
+    font-family: 'Lilita One', sans-serif;/* Aplica la fuente Pacifico al h2 */
+    font-size: 40px; /* Tamaño del texto */
+    color: greenyellow; /* Color del texto */
+    line-height: 2.0;
+    text-align: left; /* Alineación del texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    margin-bottom: 0px; /* Margen inferior para separar del párrafo */
+    margin-right: 200px;
+    padding-right: 100px;
+    top: 0%;
+    left: 0%; /* Coloca el texto al 50% del lado izquierdo */
+    transform: translate(12%);
+
+}
+
+#h2tt{
+    vertical-align: super;
+    font-family: 'Lilita One', sans-serif;/* Aplica la fuente Pacifico al h2 */
+    font-size: 40px; /* Tamaño del texto */
+    color: greenyellow; /* Color del texto */
+    line-height: 2.0;
+    text-align: left; /* Alineación del texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    margin-bottom: 100px; /* Margen inferior para separar del párrafo */
+    margin-right: 80px;
+    padding-right: 100px;
+    top: 0%;
+    left: 0%; /* Coloca el texto al 50% del lado izquierdo */
+    transform: translate(12%);
+
+}
+
+
+p {
+    font-family: 'TriSpace', sans-serif;  /* Fuente del párrafo */
+    font-size: 18px; /* Tamaño del texto del párrafo */
+    line-height: 2.0; /* Espaciado entre líneas */
+    color: greenyellow; /*Color del texto del párrafo */
+    text-align: start; /* Alineación justificada */
+    margin-right: 200px;
+    padding-right: 100px;
+    top: 0%; /* Coloca el texto al 50% de la parte superior */
+    left: 0%; /* Coloca el texto al 50% del lado izquierdo */
+   transform: translate(5%);/* Centra el texto */
+    /* Cambia a tu color deseado para el texto */
+}
+
+.contenido-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.contenido-icon img {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño de los íconos según lo desees */
+    height: auto; /* Para mantener la proporción */
+    margin: 0px 15px; /* Espacio entre los íconos */
+}
+
+.contenido img {
+    position: absolute;
+    top: 100px; /* Distancia desde la parte superior */
+    right: 240px; /* Distancia desde el lado derecho */
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 250px;
+    height: auto;
+}
+
+/* ------- EDUCACION-------- */
+
+.educación-section {
+    /*position: absolute;*/
+    /*position: relative;*/
+    text-align: center;
+    padding: 10rem 2rem;
+    background-image: url('fondo.png');
+    /*background-color: rgba(0, 0, 0, 0.9);*/
+    /*background-color: #212F3C;*/
+    /*background-color: var(--second-blue);*/
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Hace que la imagen de fondo cubra completamente el contenedor */
+
+}
+.educación-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+
+.btn{
+    display:  inline-block;
+    /*background-color: yellowgreen;*/
+    color: #ffffff;
+    text-decoration:none;
+    padding: 35 px 55 px;
+    margin-top: 0 px;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: yellowgreen;
+} 
+
+.btn h3 {
+    margin: 10px;
+    font-size: 150px;
+}
+
+
+
+.experiencia-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /*background-image: url('C:/a-portafolio-tania-dev/Imagen9.png');*/
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+/* -------PROYECTOS-------- */
+
+.proyectos-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    /*background: var(--second-blue);*/
+    background-image: url('fondo.png');
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Hace que la imagen de fondo cubra completamente el contenedor */
+
+}
+.proyectos-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+.grid-cards-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    justify-content: center;
+    justify-items: center;
+}
+.grid-cards-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 7rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    justify-content: center;
+    justify-items: center;
+}
+.card1 {
+    height: 30rem;
+    width: 30rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.card1 img {
+    height: 100%;
+    width: 100%;
+}
+.card1:hover .details {
+    opacity: 1;
+    height: 100%;
+}
+.details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.details h1 {
+    margin: 10px;
+    font-size: 30px;
+}
+.details p {
+    margin: 2px 0;
+    font-size: 12px;
+}
+
+
+/* ------- CONTACTO-------- */
+
+.contacto-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background-image: url('fondo.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+}
+.contacto-header-section > h2 {
+    font-size: 6rem;
+}  
+@media (max-width: 28.75em) {
+    .contacto-header-section > h2 {
+      font-size: 4rem;
+    }
+}
+.contacto-header-section > p {
+    font-style: italic;
+} 
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    width: 200px; /* ancho fijo para cada elemento */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+    margin: 10px; /* margen para separar los elementos */
+    
+}
+
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+/* ------- FOOTER -------- */
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: black;
+}
+footer > p {
+    margin: 2rem;
+}
+footer i {
+    vertical-align: middle;
+}
+
+.titulo-final{ 
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+    font-family: 'Source Serif Pro', serif;
+}
+
+
+@media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+}
+
+button {
+    height: 40px;
+    border-radius: 100%;
+    border: azure;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: rgb(135, 250, 166);
+}
+button > img {
+    height: 30px;
+}
+
+
+/*RESPONSIVE DESIGN */
+
+@media screen and (max-width: 2500px) {
+    .text-container {
+        padding: 0 2rem;
+    }
+
+    html {
+        font-size: 60%;
+    }
+    .container {
+        padding: 0 3%; /* Ajusta el relleno según sea necesario */
+    }
+
+    .about__me {
+        padding: 60px; /* Reducir el padding del área "about me" */
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .services {
+        padding: 80px; /* Reducir el padding de la sección de servicios */
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .image {
+        margin-right: 3%; /* Reducir el margen derecho */
+        transform: translate(0%);
+    }
+}
+
+/* para 1500px o menos */
+@media screen and (max-width:1500px) {
+    html {
+        font-size: 60%;
+    }
+    .container {
+        padding: 0 3%; /* Ajusta el relleno según sea necesario */
+    }
+
+    .about__me {
+        padding: 60px; /* Reducir el padding del área "about me" */
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .services {
+        padding: 80px; /* Reducir el padding de la sección de servicios */
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .image {
+        margin-right: 3%; /* Reducir el margen derecho */
+        transform: translate(0%);
+    }
+
+   
+}
+
+
+/* para 980px o menos */
+@media screen and (max-width:980px) {
+    html {
+        padding: 0px;
+        padding-right: 0px;
+        font-size: 60%;
+    }
+
+    .container {
+        padding: 0 2%; /* Ajusta el relleno según sea necesario */
+    }
+
+    .about__me {
+        padding: 60px; /* Reducir el padding del área "about me" */
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .services {
+        padding: 80px; /* Reducir el padding de la sección de servicios */
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .image {
+        margin-right: 3%; /* Reducir el margen derecho */
+        transform: translate(0%);
+    }
+
+}
+
+/* para 700px o menos */
+@media screen and (max-width:700px) {
+    html {
+        padding: 0px;
+        padding-right: 0px;
+        font-size: 60%;
+    }
+
+    .container {
+        padding: 0 2%; /* Ajusta el relleno según sea necesario */
+    }
+
+    .about__me {
+        padding: 40px; /* Reducir más el padding del área "about me" */
+        font-size: 1.1rem; /* Reducir más el tamaño de la fuente */
+    }
+
+    .services {
+        padding: 60px; /* Reducir más el padding de la sección de servicios */
+        font-size: 1.1rem; /* Reducir más el tamaño de la fuente */
+    }
+
+    .image {
+        margin-right: 2%; /* Reducir más el margen derecho */
+        transform: translate(0%);
+    }
+
+}
+
+/* para 480px o menos */
+@media screen and (max-width:480px) {
+    html {
+        padding-right: 0px; 
+        font-size: 60%;
+    }
+
+    .container {
+        padding: 0 2%; /* Ajusta el relleno según sea necesario */
+    }
+
+    .about__me {
+        padding: 100px; /* Reducir más el padding del área "about me" */
+        font-size: 1.1rem; /* Reducir más el tamaño de la fuente */
+    }
+
+    .services {
+        padding: 20px; /* Reducir más el padding de la sección de servicios */
+        font-size: 1.1rem; /* Reducir más el tamaño de la fuente */
+    }
+
+    .image {
+        margin-right: 100%; /* Reducir más el margen derecho */
+        transform: translate(0%);  /* Ajustes de posición */
+        width: 100%; /* Establecer el ancho máximo al 100% del contenedor */
+        height: auto; /* Altura automática para mantener la proporción */
+        margin-right: 1%; /* Reducción del margen derecho para ajustar */
+    }
+
+
+
+    .grid-cards-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-cards-2 {
+        justify-items: center;
+    }
+    .contact-links {
+        justify-items: center;
+    }
+    .nav-list i {
+        visibility: hidden;
+    }
+    .nav-list a {
+        font-size: 11px;
+    }
+}
+
