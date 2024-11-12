@@ -1,4 +1,4 @@
-"Bienvenido a mi portafolio, desarrollado con Jekyll y React. En este sitio podrás encontrar información sobre mi formación académica, experiencia laboral y proyectos en los que he trabajado. Explora 
+Bienvenido a mi portafolio, desarrollado con JS y React. En este sitio podrás encontrar información sobre mi formación académica, experiencia laboral y proyectos en los que he trabajado. Explora 
 las secciones dedicadas a mi educación, trayectoria profesional y ejemplos de mis trabajos destacados. Gracias por visitar mi portafolio.
 
 ![image](https://github.com/user-attachments/assets/d8088211-60ef-440b-86b7-2fd3103b65fb)
